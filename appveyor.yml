@@ -26,5 +26,5 @@ build: false
 
 test_script:
   - cargo build --verbose
-  - $env:RUST_BACKTRACE=1; cargo test --verbose --features chrono,gitoxide,semver
+  - set RUST_BACKTRACE=1 && cargo test --verbose --features chrono,gitoxide,semver
   # - cargo test --verbose --features chrono,git2,semver
